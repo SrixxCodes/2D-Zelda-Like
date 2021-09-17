@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3733443556418231736}
   - component: {fileID: 3733443556418231743}
   m_Layer: 0
-  m_Name: Room Transfer
+  m_Name: Room Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,6 +70,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f25847caca3d2c346bbbf3c497a6e0a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraMinChange: {x: 0, y: 21}
-  cameraMaxChange: {x: 0, y: 21}
-  playerChange: {x: 0, y: 1, z: 0}
+  needText: 0
+  placeName: 
+  text: {fileID: 0}
+  placeText: {fileID: 0}
+  waitTime: 4
