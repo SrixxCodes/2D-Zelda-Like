@@ -289,7 +289,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1599757401
-  m_SortingLayer: 1
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 7152930139536384079, guid: e3f7ab2508f13a148a047a98657db2b5,
     type: 3}
@@ -12473,6 +12473,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1754606226
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754606228}
+  - component: {fileID: 1754606227}
+  - component: {fileID: 1754606229}
+  m_Layer: 0
+  m_Name: question
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!212 &1754606227
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754606226}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -765925219
+  m_SortingLayer: 2
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 351992477344869309, guid: bc13c10ffb8d059459b88a0805008721, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.8125, y: 0.75}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1754606228
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754606226}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.846, z: -294.51212}
+  m_LocalScale: {x: 0.5894212, y: 0.5894212, z: 0.5894212}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1754606229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754606226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919f579421b034641a47e238efd632cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 177386080}
+  yOffset: {x: 0, y: 0.846, z: 0}
 --- !u!1 &1956654060
 GameObject:
   m_ObjectHideFlags: 0
@@ -12962,6 +13058,29 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &2063447842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3793633926325786853, guid: a7497292c5af29d44b9906d7b75abd1b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3793633926629560164}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2063447843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2063447842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 473a5717d34c87841ae989a96a76efd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 2068110082}
+  question: {fileID: 1754606226}
+  dialogText: {fileID: 2104814226}
+  dialog: The Azule Lake shines bright tonight! Make sure to catch your fish today!
+  playerInRange: 0
 --- !u!1 &2068110082
 GameObject:
   m_ObjectHideFlags: 0
@@ -12974,12 +13093,12 @@ GameObject:
   - component: {fileID: 2068110085}
   - component: {fileID: 2068110084}
   m_Layer: 5
-  m_Name: Dialog
+  m_Name: DialogBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2068110083
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19876,7 +19995,7 @@ GameObject:
   - component: {fileID: 2104814227}
   - component: {fileID: 2104814226}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Dialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19899,7 +20018,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 656.3, y: 120.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104814226
 MonoBehaviour:
@@ -19914,21 +20033,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_Font: {fileID: 12800000, guid: 585188cdc4600544eb408bee749e4b3a, type: 3}
+    m_FontSize: 30
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
+    m_BestFit: 1
+    m_MinSize: 3
     m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
+    m_Alignment: 4
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
@@ -19995,6 +20114,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3793633926325786848, guid: a7497292c5af29d44b9906d7b75abd1b,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3793633926325786848, guid: a7497292c5af29d44b9906d7b75abd1b,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 245691439
+      objectReference: {fileID: 0}
     - target: {fileID: 3793633926325786849, guid: a7497292c5af29d44b9906d7b75abd1b,
         type: 3}
       propertyPath: m_RootOrder
