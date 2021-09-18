@@ -14,20 +14,27 @@ public class Knockback : MonoBehaviour
             Rigidbody2D enemy = collision.GetComponent<Rigidbody2D>();
             if(enemy != null)
             {
+                Vector2 forceDirection = enemy.transform.position - transform.position;
+                Vector2 force = forceDirection.normalized * thrust;
+                enemy.AddForce(force, ForceMode2D.Impulse);
                 StartCoroutine(KnockCoroutine(enemy));
+                Debug.Log("couroutine");
             }
         }
     }
 
     private IEnumerator KnockCoroutine(Rigidbody2D enemy)
     {
-        Vector2 forceDirection = enemy.transform.position - transform.position;
-        Vector2 force = forceDirection.normalized * thrust;
+        if (enemy != null)
+        {
+            yield return new WaitForSeconds(knockTime);
+            enemy.velocity = Vector2.zero;
+        }
+        // Old method for knocback
 
-        enemy.velocity = force;
-        yield return new WaitForSeconds(knockTime);
-
-        enemy.velocity = Vector2.zero;
+        // enemy.velocity = force;
+        // yield return new WaitForSeconds(knockTime);
+        // enemy.velocity = Vector2.zero;
     }
 
 
