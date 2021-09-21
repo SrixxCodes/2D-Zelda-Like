@@ -9,33 +9,30 @@ public class Knockback : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Breakable") && this.gameObject.CompareTag("Player"))
         {
-            Rigidbody2D enemy = collision.GetComponent<Rigidbody2D>();
-            if(enemy != null)
+            collision.GetComponent<Pot>().Smash();
+        }
+        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.CompareTag("Player"))
+        {
+            Rigidbody2D hit = collision.GetComponent<Rigidbody2D>();
+            if(hit != null)
             {
-                Vector2 forceDirection = enemy.transform.position - transform.position;
+                Vector2 forceDirection = hit.transform.position - transform.position;
                 Vector2 force = forceDirection.normalized * thrust;
-                enemy.AddForce(force, ForceMode2D.Impulse);
-                StartCoroutine(KnockCoroutine(enemy));
-                Debug.Log("couroutine");
+                hit.AddForce(force, ForceMode2D.Impulse);
+
+                if (collision.gameObject.CompareTag("Enemy"))
+                {
+                    hit.GetComponent<Enemy>().currentState = EnemyState.stagger;
+                    collision.GetComponent<Enemy>().Knock(hit, knockTime);
+                }
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    hit.GetComponent<PlayerMovement>().currentState = PlayerState.stagger;
+                    collision.GetComponent<PlayerMovement>().Knock(knockTime);
+                }
             }
         }
     }
-
-    private IEnumerator KnockCoroutine(Rigidbody2D enemy)
-    {
-        if (enemy != null)
-        {
-            yield return new WaitForSeconds(knockTime);
-            enemy.velocity = Vector2.zero;
-        }
-        // Old method for knocback
-
-        // enemy.velocity = force;
-        // yield return new WaitForSeconds(knockTime);
-        // enemy.velocity = Vector2.zero;
-    }
-
-
 }
