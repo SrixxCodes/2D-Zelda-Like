@@ -376,7 +376,7 @@ TextureImporter:
     second: objects_125
   - first:
       213: -8964931362486711191
-    second: objects_127
+    second: xpBar
   - first:
       213: 6047981793563322428
     second: objects_128
@@ -2856,13 +2856,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_127
+      name: xpBar
       rect:
         serializedVersion: 2
         x: 0
-        y: 40
-        width: 80
-        height: 54
+        y: 41
+        width: 78
+        height: 53
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
