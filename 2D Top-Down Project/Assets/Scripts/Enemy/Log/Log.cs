@@ -30,21 +30,24 @@ public class Log : Enemy
         {
             if (currentState == EnemyState.idle || currentState == EnemyState.walk && currentState != EnemyState.stagger)
             {
+                anim.SetBool("wakeUp", true);
                 Vector3 temp = Vector3.MoveTowards(transform.position, target.position, moveSpeed * Time.fixedDeltaTime);
+                changeAnim(temp - transform.position);
                 rigidbody2d.MovePosition(temp);
                 ChangeState(EnemyState.walk);
-                anim.SetBool("wakeUp", true);
             }
-            else
-            {
-                anim.SetBool("wakeUp", false);
-            }
+        }
+        else if (Vector3.Distance(target.position, transform.position) > chaseRadius)
+        {
+            anim.SetBool("wakeUp", false);
         }
     }
 
-    private void ChangeAnim(Vector2 direction)
+    private void changeAnim(Vector2 direction)
     {
-
+        direction = direction.normalized;
+        anim.SetFloat("moveX", direction.x);
+        anim.SetFloat("moveY", direction.y);
     }
 
     private void ChangeState(EnemyState newState)
