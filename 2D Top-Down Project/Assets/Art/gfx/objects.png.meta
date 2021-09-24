@@ -13,19 +13,19 @@ TextureImporter:
     second: objects_2
   - first:
       213: -4430392651179603617
-    second: objects_3
+    second: fullHeart
   - first:
       213: 2654447934904345190
     second: objects_4
   - first:
       213: -3276687688264177478
-    second: objects_5
+    second: halfHeart
   - first:
       213: 5069650035751226587
     second: objects_6
   - first:
       213: -9053378900703536071
-    second: objects_7
+    second: emptyHeart
   - first:
       213: 1336440320741484319
     second: objects_8
@@ -609,7 +609,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_3
+      name: fullHeart
       rect:
         serializedVersion: 2
         x: 64
@@ -651,7 +651,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_5
+      name: halfHeart
       rect:
         serializedVersion: 2
         x: 96
@@ -693,7 +693,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_7
+      name: emptyHeart
       rect:
         serializedVersion: 2
         x: 128
