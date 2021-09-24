@@ -506,7 +506,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 2
-  knockTime: 0.3
+  knockTime: 0.2
+  damage: 1
 --- !u!4 &360060459 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3733443556418231737, guid: fd90accfdd5d74a4eb61a7a98b704bff,
@@ -3918,7 +3919,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 2
-  knockTime: 0.3
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &645208451
 GameObject:
   m_ObjectHideFlags: 0
@@ -9581,6 +9583,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 0
+  maxHealth: {fileID: 11400000, guid: 96f03b52664fde945b74f96b464e3c9f, type: 2}
   health: 0
   enemyName: Log
   baseAttack: 1
@@ -9651,6 +9654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thrust: 2
   knockTime: 0.2
+  damage: 0
 --- !u!61 &1344467207
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9853,7 +9857,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 2
-  knockTime: 0.3
+  knockTime: 0.2
+  damage: 1
 --- !u!4 &1475286321 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3733443556418231737, guid: fd90accfdd5d74a4eb61a7a98b704bff,
@@ -13356,7 +13361,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thrust: 2
-  knockTime: 0.3
+  knockTime: 0.2
+  damage: 1
 --- !u!1 &2060189510
 GameObject:
   m_ObjectHideFlags: 0
