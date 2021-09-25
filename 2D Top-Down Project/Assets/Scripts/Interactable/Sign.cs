@@ -11,16 +11,10 @@ public class Sign : MonoBehaviour
     public string dialog;
     public bool playerInRange;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1") && playerInRange)
+        if(Input.GetButtonDown("Interact") && playerInRange)
         {
             if(dialogBox.activeInHierarchy)
             {
@@ -38,9 +32,10 @@ public class Sign : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !collision.isTrigger)
         {
             playerInRange = true;
+
             if (question.activeInHierarchy)
             {
                 question.SetActive(false);
@@ -54,7 +49,7 @@ public class Sign : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !collision.isTrigger)
         {
             playerInRange = false;
             dialogBox.SetActive(false);
