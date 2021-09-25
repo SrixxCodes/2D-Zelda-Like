@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator anim;
     public FloatValue currentHealth;
     public Signals playerHealthSignals;
+    public VectorValue startingPosition;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         currentState = PlayerState.walk;
         anim = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        transform.position = startingPosition.initialValue;
     }
 
     // Update is called once per frame

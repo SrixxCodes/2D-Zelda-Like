@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8715232873378678807}
   - component: {fileID: 2601192686786224178}
+  - component: {fileID: -1807408210217043875}
   m_Layer: 0
   m_Name: Scene Transition
   m_TagString: Untagged
@@ -57,3 +58,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.1280549, y: 1.0040069}
   m_EdgeRadius: 0
+--- !u!114 &-1807408210217043875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645586369343684529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc3841724338284449689145f29bca60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: 
+  playerPosition: {x: 0, y: 0}
+  playerStorage: {fileID: 0}

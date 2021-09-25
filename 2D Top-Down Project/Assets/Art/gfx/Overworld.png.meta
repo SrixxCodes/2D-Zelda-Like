@@ -493,7 +493,7 @@ TextureImporter:
     second: Overworld_162
   - first:
       213: -4856597035943072115
-    second: Overworld_163
+    second: door_1
   - first:
       213: -8253807065747828767
     second: Overworld_164
@@ -6741,7 +6741,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_163
+      name: door_1
       rect:
         serializedVersion: 2
         x: 128
