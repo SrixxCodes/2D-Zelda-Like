@@ -5238,6 +5238,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Transition
       objectReference: {fileID: 0}
+    - target: {fileID: 2601192686786224178, guid: fc70770325787524bb437ef61f87c005,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.58639765
+      objectReference: {fileID: 0}
+    - target: {fileID: 2601192686786224178, guid: fc70770325787524bb437ef61f87c005,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.19332099
+      objectReference: {fileID: 0}
     - target: {fileID: 8715232873378678807, guid: fc70770325787524bb437ef61f87c005,
         type: 3}
       propertyPath: m_RootOrder
@@ -5317,3 +5327,8 @@ MonoBehaviour:
   sceneToLoad: Overworld
   playerPosition: {x: -10.5, y: 6.5}
   playerStorage: {fileID: 11400000, guid: 230bffd01dfe79341a835b8c2cee1c56, type: 2}
+  fadeInPanel: {fileID: 197367714488141257, guid: 8f003bee2dede4540a98ff47fc6fc2e1,
+    type: 3}
+  fadeOutPanel: {fileID: 4780342302855468319, guid: 800de8870e8fbff498ea2d19c2517d4e,
+    type: 3}
+  fadeWait: 0.33

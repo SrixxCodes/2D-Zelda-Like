@@ -136,7 +136,7 @@ GameObject:
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &44371265
 Transform:
   m_ObjectHideFlags: 0
@@ -145,7 +145,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44371264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.96, y: 35.02, z: -36.20703}
+  m_LocalPosition: {x: -10.537, y: 6.13, z: -36.20703}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37586,9 +37586,26 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -1807408210217043875, guid: fc70770325787524bb437ef61f87c005,
         type: 3}
+      propertyPath: fadeWait
+      value: 0.33
+      objectReference: {fileID: 0}
+    - target: {fileID: -1807408210217043875, guid: fc70770325787524bb437ef61f87c005,
+        type: 3}
+      propertyPath: fadeInPanel
+      value: 
+      objectReference: {fileID: 197367714488141257, guid: 8f003bee2dede4540a98ff47fc6fc2e1,
+        type: 3}
+    - target: {fileID: -1807408210217043875, guid: fc70770325787524bb437ef61f87c005,
+        type: 3}
       propertyPath: sceneToLoad
       value: HouseInterior
       objectReference: {fileID: 0}
+    - target: {fileID: -1807408210217043875, guid: fc70770325787524bb437ef61f87c005,
+        type: 3}
+      propertyPath: fadeOutPanel
+      value: 
+      objectReference: {fileID: 4780342302855468319, guid: 800de8870e8fbff498ea2d19c2517d4e,
+        type: 3}
     - target: {fileID: -1807408210217043875, guid: fc70770325787524bb437ef61f87c005,
         type: 3}
       propertyPath: playerStorage
@@ -37673,7 +37690,7 @@ PrefabInstance:
     - target: {fileID: 8715232873378678807, guid: fc70770325787524bb437ef61f87c005,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.5
+      value: -10.4989
       objectReference: {fileID: 0}
     - target: {fileID: 8715232873378678807, guid: fc70770325787524bb437ef61f87c005,
         type: 3}
@@ -69807,12 +69824,12 @@ PrefabInstance:
     - target: {fileID: 6279548419308971992, guid: d6dfa5cf1cc82814ca02b8ad029b7385,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6279548419308971992, guid: d6dfa5cf1cc82814ca02b8ad029b7385,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 8.5
       objectReference: {fileID: 0}
     - target: {fileID: 6279548419308971992, guid: d6dfa5cf1cc82814ca02b8ad029b7385,
         type: 3}
