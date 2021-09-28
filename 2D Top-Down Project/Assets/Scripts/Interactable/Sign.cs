@@ -5,8 +5,10 @@ using UnityEngine.UI;
 
 public class Sign : MonoBehaviour
 {
+    public Signals contextOn;
+    public Signals contextOff;
+
     public GameObject dialogBox;
-    public GameObject question;
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
@@ -19,13 +21,11 @@ public class Sign : MonoBehaviour
             if(dialogBox.activeInHierarchy)
             {
                 dialogBox.SetActive(false);
-                question.SetActive(true);
             }
             else
             {
                 dialogBox.SetActive(true);
                 dialogText.text = dialog;
-                question.SetActive(false);
             }
         }
     }
@@ -35,15 +35,7 @@ public class Sign : MonoBehaviour
         if (collision.CompareTag("Player") && !collision.isTrigger)
         {
             playerInRange = true;
-
-            if (question.activeInHierarchy)
-            {
-                question.SetActive(false);
-            }
-            else
-            {
-                question.SetActive(true);
-            }
+            contextOn.Raise();
         }
     }
 
@@ -53,7 +45,7 @@ public class Sign : MonoBehaviour
         {
             playerInRange = false;
             dialogBox.SetActive(false);
-            question.SetActive(false);
+            contextOff.Raise();
         }
     }
 
