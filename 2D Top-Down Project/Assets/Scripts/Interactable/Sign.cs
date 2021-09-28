@@ -3,14 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Sign : MonoBehaviour
+public class Sign : Dialog
 {
-    public Signals context;
-    public GameObject dialogBox;
-    public Text dialogText;
-    public string dialog;
-    public bool playerInRange;
-
     // Update is called once per frame
     void Update()
     {
@@ -28,15 +22,6 @@ public class Sign : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Player") && !collision.isTrigger)
-        {
-            playerInRange = true;
-            context.Raise();
-        }
-    }
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player") && !collision.isTrigger)
@@ -46,5 +31,4 @@ public class Sign : MonoBehaviour
             context.Raise();
         }
     }
-
 }
