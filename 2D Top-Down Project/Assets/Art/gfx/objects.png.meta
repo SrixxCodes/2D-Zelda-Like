@@ -28,7 +28,7 @@ TextureImporter:
     second: emptyHeart
   - first:
       213: 1336440320741484319
-    second: objects_8
+    second: chest_0
   - first:
       213: -93750458980389090
     second: objects_9
@@ -714,13 +714,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_8
+      name: chest_0
       rect:
         serializedVersion: 2
         x: 149
-        y: 304
+        y: 302
         width: 22
-        height: 16
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1032,9 +1032,9 @@ TextureImporter:
       name: objects_23
       rect:
         serializedVersion: 2
-        x: 250
+        x: 251
         y: 181
-        width: 66
+        width: 65
         height: 119
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

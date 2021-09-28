@@ -59964,11 +59964,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473a5717d34c87841ae989a96a76efd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInRange: 0
   context: {fileID: 11400000, guid: 166f9c7e2598b0b4da21c94de3eb8d4a, type: 2}
   dialogBox: {fileID: 200644916}
-  dialogText: {fileID: 2036214417}
   dialog: The Azule Lake shines bright tonight! Make sure to catch your fish today!
-  playerInRange: 0
+  dialogText: {fileID: 2036214417}
 --- !u!1 &2065844032
 GameObject:
   m_ObjectHideFlags: 0
