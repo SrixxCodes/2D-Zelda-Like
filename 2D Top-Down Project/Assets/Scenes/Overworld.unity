@@ -13841,39 +13841,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68ccf121fbcc80b4aa367316049b3a42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  signals: {fileID: 11400000, guid: acb3e9d863f16394287c1233072d3712, type: 2}
-  signalsEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 555261505}
-        m_MethodName: Disable
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &555261504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555261502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68ccf121fbcc80b4aa367316049b3a42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   signals: {fileID: 11400000, guid: 166f9c7e2598b0b4da21c94de3eb8d4a, type: 2}
   signalsEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 555261505}
-        m_MethodName: Enable
+        m_MethodName: ChangeContext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13896,6 +13869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contextClue: {fileID: 1265902253}
+  contextActive: 0
 --- !u!1 &645208451
 GameObject:
   m_ObjectHideFlags: 0
@@ -38059,7 +38033,7 @@ GameObject:
   - component: {fileID: 1344467203}
   - component: {fileID: 1344467207}
   - component: {fileID: 1344467206}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Log
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -59990,8 +59964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473a5717d34c87841ae989a96a76efd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contextOn: {fileID: 11400000, guid: 166f9c7e2598b0b4da21c94de3eb8d4a, type: 2}
-  contextOff: {fileID: 11400000, guid: acb3e9d863f16394287c1233072d3712, type: 2}
+  context: {fileID: 11400000, guid: 166f9c7e2598b0b4da21c94de3eb8d4a, type: 2}
   dialogBox: {fileID: 200644916}
   dialogText: {fileID: 2036214417}
   dialog: The Azule Lake shines bright tonight! Make sure to catch your fish today!
