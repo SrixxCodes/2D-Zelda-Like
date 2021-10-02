@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f168df5f0df2ec40ae56d42b089c15d, type: 3}
+  m_Name: Rusty Key
+  m_EditorClassIdentifier: 
+  itemSprite: {fileID: 21300000, guid: be00b59ff5eb0814eb4923a2b0f8a48a, type: 3}
+  itemDescription: It's a rusty key! It should fit into a door nearby...
+  isKey: 0

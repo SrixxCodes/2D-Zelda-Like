@@ -31,7 +31,7 @@ TextureImporter:
     second: chest_0
   - first:
       213: -93750458980389090
-    second: objects_9
+    second: chest_3
   - first:
       213: 4455232240493665095
     second: objects_10
@@ -67,10 +67,10 @@ TextureImporter:
     second: objects_20
   - first:
       213: -6883905864151536645
-    second: objects_21
+    second: chest_1
   - first:
       213: 7206194005228167239
-    second: objects_22
+    second: chest_2
   - first:
       213: -4922617476772045510
     second: objects_23
@@ -721,7 +721,7 @@ TextureImporter:
         y: 302
         width: 22
         height: 18
-      alignment: 0
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -735,14 +735,14 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_9
+      name: chest_3
       rect:
         serializedVersion: 2
-        x: 182
-        y: 304
-        width: 21
-        height: 15
-      alignment: 0
+        x: 181
+        y: 302
+        width: 22
+        height: 18
+      alignment: 9
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
@@ -987,15 +987,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_21
+      name: chest_1
       rect:
         serializedVersion: 2
         x: 197
         y: 279
         width: 22
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3895}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1008,15 +1008,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: objects_22
+      name: chest_2
       rect:
         serializedVersion: 2
         x: 229
         y: 279
         width: 22
         height: 18
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3895}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
